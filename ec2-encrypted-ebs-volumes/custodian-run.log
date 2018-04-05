@@ -1,1 +1,0 @@
-2018-03-27 09:19:20,031 - custodian.policy - INFO - policy: ec2-encrypted-ebs-volumes resource:ec2 region:us-east-1 count:3 time:2.08

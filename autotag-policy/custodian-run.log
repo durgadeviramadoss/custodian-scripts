@@ -1,8 +1,0 @@
-2018-03-26 08:42:48,156 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:1.82
-2018-03-26 11:01:11,289 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:1.64
-2018-03-26 11:05:16,315 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:0.02
-2018-03-26 11:13:48,105 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:0.02
-2018-03-26 11:33:56,568 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:1.43
-2018-03-26 11:50:40,717 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:1.78
-2018-03-27 07:03:25,205 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:15 time:0.55
-2018-03-27 07:09:32,565 - custodian.policy - INFO - policy: autotag-policy resource:ec2 region:us-east-1 count:106 time:1.18
