@@ -4,7 +4,7 @@ policies:
     comment: |
       Report on total count of non compliant instances
     filters:
-      - and:
+      - or:
           - "tag:hg:contact:poc": absent
           - "tag:hg:contact:poc_email": absent
           - "tag:hg:contact:team": absent
