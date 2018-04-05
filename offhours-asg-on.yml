@@ -1,0 +1,11 @@
+policies:
+  - name: offhours-asg-on
+    resource: asg
+    filters:
+      - type: onhour
+        offhour: 8
+        default_tz: bst
+    actions:
+      - type: resize
+        restore-options-tag: OffHoursPrevious
+

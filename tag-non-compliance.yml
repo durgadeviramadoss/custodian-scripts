@@ -1,0 +1,18 @@
+policies:
+  - name: ec2-tag-compliance
+    resource: ec2
+    comment: |
+      Report on total count of non compliant instances
+    filters:
+      - and:
+          - "tag:hg:contact:poc": present
+          - "tag:hg:contact:poc_email": present
+          - "tag:hg:contact:team": present
+          - "tag:hg:cost:application": present
+          - "tag:hg:cost:business_role": present
+          - "tag:hg:cost:cost_center": present
+          - "tag:hg:cost:product": present
+          - "tag:hg:cost:stack": present
+          - "tag:hg:identity:environment": present
+          - "tag:hg:identity:purpose": present
+          - "tag:hg:identity:software": present

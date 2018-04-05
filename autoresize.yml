@@ -1,0 +1,20 @@
+policies:
+  - name: autoresize-ec2
+    resource: ec2
+    filters:
+      - type: value
+        key: InstanceType
+        op: in
+        value:
+          - t2.medium
+      - type: metrics
+        name: CPUUtilization
+        days: 14
+        value: 5
+        op: less-than
+    actions:
+      - type: resize
+        restart: false
+        type-map:
+          t2.medium: t2.micro
+

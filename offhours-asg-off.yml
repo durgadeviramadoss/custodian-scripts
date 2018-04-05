@@ -1,0 +1,15 @@
+policies:
+  - name: offhours-asg-off
+    resource: asg
+    filters:
+      - "tag:custodian_downtime": present
+      - type: offhour
+        offhour: 10
+        default_tz: gmt
+        opt-out: True
+    actions:
+      - type: resize
+        min-size: 0
+        desired-size: 0
+        save-options-tag: OffHoursPrevious
+

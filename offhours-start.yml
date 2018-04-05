@@ -1,0 +1,12 @@
+policies:
+  - name: on-hour
+    resource: ec2
+    filters:
+      - "tag:env": present
+      - type: onhour
+        default_tz: gmt
+        onhour: 10
+        opt-out: True
+        weekends: False
+    actions:
+      - start

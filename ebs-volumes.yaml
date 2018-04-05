@@ -1,0 +1,7 @@
+policies:
+  - name: ebs-volumes
+    resource: ebs
+    filters:
+     - type: value
+       key: "Attachments[0].Device"
+       value: null

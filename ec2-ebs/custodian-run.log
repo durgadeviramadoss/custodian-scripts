@@ -1,0 +1,2 @@
+2018-03-27 07:33:53,352 - custodian.policy - INFO - policy: ec2-ebs resource:ec2 region:us-east-1 count:0 time:1.14
+2018-03-27 08:57:35,490 - custodian.policy - INFO - policy: ec2-ebs resource:ec2 region:us-east-1 count:0 time:2.47

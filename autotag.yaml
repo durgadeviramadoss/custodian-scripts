@@ -1,0 +1,5 @@
+policies:
+  - name: autotag-policy
+    resource: ec2
+    filters:
+      - "tag:Environment": present

@@ -1,0 +1,6137 @@
+[
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T12:10:53+00:00", 
+    "PrivateIpAddress": "10.224.36.175", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-058b24356baf045bc", 
+    "EnaSupport": true, 
+    "ImageId": "ami-12ad3504", 
+    "PrivateDnsName": "ip-10-224-36-175.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hg-test-east-green-UIServicesFleet-new-InstanceSecurityGroup-1XZ4OXU1BO1X0", 
+        "GroupId": "sg-15ccfb69"
+      }
+    ], 
+    "ClientToken": "1df58891-ae2c-50c3-de2e-514e5575ec9d_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "m3.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:b6:73:0e:01:18", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-ff64312e", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-175.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.175"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-175.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-50ecd756", 
+          "AttachTime": "2018-03-14T12:10:53+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hg-test-east-green-UIServicesFleet-new-InstanceSecurityGroup-1XZ4OXU1BO1X0", 
+            "GroupId": "sg-15ccfb69"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.175"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:cost:product"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-021cb6b5933c8a29b", 
+          "AttachTime": "2018-03-14T12:10:54+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJK6BCSZL33XV2LGJK", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hg-test-east-green-UIServicesFleet-new-UIsvcInstanceProfile-I4MBZQ1JR14B"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "HG", 
+        "Key": "Project_squad"
+      }, 
+      {
+        "Value": "arn:aws:sts::958306274796:assumed-role/ADFS-Dev-AdminsFull/jbowen@healthgrades.com", 
+        "Key": "AutoTag_Creator"
+      }, 
+      {
+        "Value": "WebServerGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hg-test-east-green-UIServicesFleet-new-uisvc-testgreen-1", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "UIServicesFleet-new", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "jbowen@healthgrades.com", 
+        "Key": "Owner_email"
+      }, 
+      {
+        "Value": "MTuWThF:6am-7pm", 
+        "Key": "Running_schedule"
+      }, 
+      {
+        "Value": "True", 
+        "Key": "Schedule_justification"
+      }, 
+      {
+        "Value": "hg.com", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "hg-test-east-green", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Network"
+      }, 
+      {
+        "Value": "1,1,1", 
+        "Key": "ASG-OFF-Min-Max-Desired"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hg-test-east-green-UIServicesFleet-new/09b33700-f89e-11e6-a96f-50d501eed2b3", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "hg-test-east-green-UIServicesFleet-new", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "None", 
+        "Key": "Compliance"
+      }, 
+      {
+        "Value": "123456", 
+        "Key": "Cost_center"
+      }, 
+      {
+        "Value": "2,2,2", 
+        "Key": "ASG-ON-Min-Max-Desired"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "hg-test-east-green-UIServicesFleet-new-WebServerGroup-1SI87BSQRJQUR", 
+        "Key": "aws:autoscaling:groupName"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-10T03:50:55+00:00", 
+    "PrivateIpAddress": "10.224.36.195", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-026443e5f32bfa308", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-195.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "pbh-portal-ci-InstanceSecurityGroup-1E1XMSP039IX4", 
+        "GroupId": "sg-47a1c730"
+      }
+    ], 
+    "ClientToken": "836585f7-595e-937f-a5bd-edecdd35e609_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:4b:64:ee:1c:e2", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-3f0f4fe0", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-195.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.195"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-195.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-17542510", 
+          "AttachTime": "2018-02-10T03:50:55+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "pbh-portal-ci-InstanceSecurityGroup-1E1XMSP039IX4", 
+            "GroupId": "sg-47a1c730"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.195"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0e27fa3cfa1cd19d2", 
+          "AttachTime": "2018-02-10T03:50:56+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJIX64MMEV76B4NOQU", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/pbh-portal-ci-InstanceProfile-1JYYLKFGMUS09"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "pbh-portal-ci-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "pbh-portal-ci", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "pbh-portal", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "pbh-ci-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "pbh-portal-ci", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "pbh-ci-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "pbh client portal", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/pbh-portal-ci/53cd19f0-0df1-11e8-bfab-500c28b03efd", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "pbh-portal-ci-AutoScalingGroup-2WHWX8D0AD3Z", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/pbh-portal-ci/53cd19f0-0df1-11e8-bfab-500c28b03efd", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T13:00:13+00:00", 
+    "PrivateIpAddress": "10.224.236.188", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:13 GMT)", 
+    "InstanceId": "i-01a44740604d6a580", 
+    "EnaSupport": true, 
+    "ImageId": "ami-e5089df3", 
+    "PrivateDnsName": "ip-10-224-236-188.ec2.internal", 
+    "KeyName": "s-dn-pd-rsql-01", 
+    "SecurityGroups": [
+      {
+        "GroupName": "s-dn-pd-rsql-01-sg", 
+        "GroupId": "sg-6f34c810"
+      }
+    ], 
+    "ClientToken": "kkMdy1493235478129", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:d5:8d:70:25:5a", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-bd64a24b", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-188.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.188"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-188.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-a0e0498f", 
+          "AttachTime": "2017-04-26T19:38:00+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "s-dn-pd-rsql-01-sg", 
+            "GroupId": "sg-6f34c810"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.188"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06ed198b7740015fc", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0caaebb90e9a028e2", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06e1166f4a796e740", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06e399161667abc2d", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0850856deb7aa96de", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdh", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-036421b4930b583ab", 
+          "AttachTime": "2017-04-26T19:38:01+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdi", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0fa3a6865acb28412", 
+          "AttachTime": "2017-06-30T20:36:37+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdy", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0c1ef80d2831c8cbd", 
+          "AttachTime": "2017-07-26T06:24:13+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-04a1595511e68f4e6", 
+          "AttachTime": "2017-09-11T12:44:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdj", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0bbd472c8a3c2484e", 
+          "AttachTime": "2017-11-06T20:16:10+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "quality:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "kdyck@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "Quality Ratings", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "kdyck@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "provider:quality rating", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "HGDEVQRSQL01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "false", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "quality", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "Ratings", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T12:11:00+00:00", 
+    "PrivateIpAddress": "10.224.36.227", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0ba89cc7c67d6b783", 
+    "EnaSupport": true, 
+    "ImageId": "ami-12ad3504", 
+    "PrivateDnsName": "ip-10-224-36-227.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hg-test-east-green-ServicesFleet-new-InstanceSecurityGroup-WUG1P5MNS0JB", 
+        "GroupId": "sg-d64975aa"
+      }
+    ], 
+    "ClientToken": "99058891-aeba-6522-61bf-6e7d31d80ca9_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "m3.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:f9:d7:8a:41:e8", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-a1603570", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-227.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.227"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-227.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-20e3d826", 
+          "AttachTime": "2018-03-14T12:11:00+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hg-test-east-green-ServicesFleet-new-InstanceSecurityGroup-WUG1P5MNS0JB", 
+            "GroupId": "sg-d64975aa"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.227"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:cost:product"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0dd357cd0d67cbf19", 
+          "AttachTime": "2018-03-14T12:11:01+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIW7EJOCISI6ER2F3Y", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hg-test-east-green-ServicesFleet-new-ServicesInstanceProfile-P3FIPUP1NGEM"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "1,1,1", 
+        "Key": "ASG-OFF-Min-Max-Desired"
+      }, 
+      {
+        "Value": "WebServerGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "None", 
+        "Key": "Compliance"
+      }, 
+      {
+        "Value": "hg-test-east-green-ServicesFleet-new", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "2,2,2", 
+        "Key": "ASG-ON-Min-Max-Desired"
+      }, 
+      {
+        "Value": "hg-test-east-green-ServicesFleet-new-Service-testgreen-1", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hg-test-east-green", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "ServicesFleet-new", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "hg-test-east-green-ServicesFleet-new-WebServerGroup-FBH99Y5G9EU1", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "True", 
+        "Key": "Schedule_justification"
+      }, 
+      {
+        "Value": "jbowen@healthgrades.com", 
+        "Key": "Owner_email"
+      }, 
+      {
+        "Value": "HG", 
+        "Key": "Project_squad"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "hg.com", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Network"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hg-test-east-green-ServicesFleet-new/6522cc50-f92e-11e6-8e6a-500c20ff1436", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "MTuWThF:6am-7pm", 
+        "Key": "Running_schedule"
+      }, 
+      {
+        "Value": "arn:aws:sts::958306274796:assumed-role/ADFS-Dev-AdminsFull/jbowen@healthgrades.com", 
+        "Key": "AutoTag_Creator"
+      }, 
+      {
+        "Value": "123456", 
+        "Key": "Cost_center"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-01-16T17:13:08+00:00", 
+    "PrivateIpAddress": "10.224.36.167", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0b9e13096ec25de71", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-167.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-webbeacon-InstanceSecurityGroup-1WW07NG1ETN92", 
+        "GroupId": "sg-2c763e58"
+      }
+    ], 
+    "ClientToken": "07d583ff-d732-5d3f-938b-7f76824696d7_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:78:eb:6c:be:74", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-faa84026", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-167.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.167"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-167.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-86457f5a", 
+          "AttachTime": "2018-01-16T17:13:08+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-webbeacon-InstanceSecurityGroup-1WW07NG1ETN92", 
+            "GroupId": "sg-2c763e58"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.167"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-031d86bc070f848b6", 
+          "AttachTime": "2018-01-16T17:13:08+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAI5OVMTYLGHOC6THRQ", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-webbeacon-InstanceProfile-1NZQW1LQEIOZ8"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "hgw-webbeacon", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-webbeacon/15e16850-e0d1-11e7-8b36-50d5cd24fac6", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "hgw-test-webbeacon", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-webbeacon/15e16850-e0d1-11e7-8b36-50d5cd24fac6", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "webbeacon for tracking emails", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-test-webbeacon-AutoScalingGroup-RV7L11LJHZVA", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "hgw-test-webbeacon-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hgw-test-webbeacon", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-24T21:13:07+00:00", 
+    "PrivateIpAddress": "10.224.36.144", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0acf4e97d1dc7278e", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-144.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "ericktestsg", 
+        "GroupId": "sg-2035d351"
+      }, 
+      {
+        "GroupName": "pbh-ci-svc-InstanceSecurityGroup-18QAHTHC1I4RV", 
+        "GroupId": "sg-385bf64f"
+      }
+    ], 
+    "ClientToken": "d1958726-a61a-1f79-ca08-d2cd71d052e9_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:ba:a1:51:bb:42", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-acdea872", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-144.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.144"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-144.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-4a32fb4c", 
+          "AttachTime": "2018-02-24T21:13:07+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "ericktestsg", 
+            "GroupId": "sg-2035d351"
+          }, 
+          {
+            "GroupName": "pbh-ci-svc-InstanceSecurityGroup-18QAHTHC1I4RV", 
+            "GroupId": "sg-385bf64f"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.144"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0110536662dbeb54f", 
+          "AttachTime": "2018-02-24T21:13:08+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJ44T2V4GWCILSBTG2", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/pbh-ci-svc-InstanceProfile-O6HK51VLXPER"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "pbh-ci-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/pbh-ci-svc/50ff1d10-0773-11e8-ba5e-50fae97e0835", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "pbh-ci-svc", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "pbh-ci-svc-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "pbh-ci-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "pbh.healthgrades.com services stack for ci", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "pbh-ci-svc-AutoScalingGroup-7AO0ZKK6L5TT", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/pbh-ci-svc/50ff1d10-0773-11e8-ba5e-50fae97e0835", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "pbh-ci-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "pbh-svc", 
+        "Key": "hg:octopus:roles"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-01T23:25:28+00:00", 
+    "PrivateIpAddress": "10.248.50.91", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-2dc37648", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-051973771ec958f58", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-248-50-91.ec2.internal", 
+    "KeyName": "hgdevndjump", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HM_DBAs_VM_Security Group", 
+        "GroupId": "sg-ba292dc6"
+      }
+    ], 
+    "ClientToken": "", 
+    "SubnetId": "subnet-b273b9c5", 
+    "InstanceType": "t2.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0a:73:2a:40:b1:56", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-2dc37648", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-5531474c", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-248-50-91.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.248.50.91"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-248-50-91.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-60512169", 
+          "AttachTime": "2018-03-01T23:25:28+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HM_DBAs_VM_Security Group", 
+            "GroupId": "sg-ba292dc6"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-b273b9c5", 
+        "PrivateIpAddress": "10.248.50.91"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1a"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0022d90791e3f25f7", 
+          "AttachTime": "2018-03-01T23:25:29+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0ef4f7404b88bba81", 
+          "AttachTime": "2018-03-01T23:25:29+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "HGDEVNDJUMP", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "Jump Box for HM", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Infrastructure", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "Dev VPC", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "pnozaki@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "Infrastructure", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "Infrastructure", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "HGDEVNDJUMP", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "Peter Nozaki : Hoang Hoang", 
+        "Key": "hg:contact:poc"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:43+00:00", 
+    "PrivateIpAddress": "10.224.36.209", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0073abe40ed0989f3", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-209.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+        "GroupId": "sg-19b7896b"
+      }
+    ], 
+    "ClientToken": "7745885d-bc91-ba39-961b-32d64fb53f82_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:12:c9:19:7d:b6", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-df54350e", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-209.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.209"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-209.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-31173137", 
+          "AttachTime": "2018-03-11T23:39:43+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+            "GroupId": "sg-19b7896b"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.209"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-07a76040507e2cd0c", 
+          "AttachTime": "2018-03-11T23:39:44+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJ2AUCR32RTBN3KOMG", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-uisvc-InstanceProfile-1M13GJ1YN3J9D"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-uisvc-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-uisvc/449d0c00-c18a-11e7-9ed7-500c28902e99", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "hgw-test-uisvc", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-uisvc/449d0c00-c18a-11e7-9ed7-500c28902e99", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "hgw-uisvc", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "healthgrades.com ui-services stack", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-test-uisvc-AutoScalingGroup-10EZ4HPOROISZ", 
+        "Key": "aws:autoscaling:groupName"
+      }
+    ], 
+    "AmiLaunchIndex": 1
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-08T13:36:12+00:00", 
+    "PrivateIpAddress": "10.224.36.25", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "User initiated (2018-03-09 00:33:34 GMT)", 
+    "InstanceId": "i-08a1f66b423e0d98b", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-25.ec2.internal", 
+    "KeyName": "migration_windows_2", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+        "GroupId": "sg-19b7896b"
+      }
+    ], 
+    "ClientToken": "", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.micro", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:ce:f0:0a:b1:2c", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-2550f3f4", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-25.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.25"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-25.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-24641c22", 
+          "AttachTime": "2018-03-07T23:51:59+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+            "GroupId": "sg-19b7896b"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.25"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0e55fd75ff5201f19", 
+          "AttachTime": "2018-03-07T23:52:00+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJ2AUCR32RTBN3KOMG", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-uisvc-InstanceProfile-1M13GJ1YN3J9D"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "Account-Test-Migration", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-uisvc/449d0c00-c18a-11e7-9ed7-500c28902e99", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "healthgrades.com ui-services stack", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-uisvc", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:43+00:00", 
+    "PrivateIpAddress": "10.224.36.236", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-022c9642a4ec9b057", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-236.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-svc-InstanceSecurityGroup-91UFSSJ5E89B", 
+        "GroupId": "sg-36b88644"
+      }
+    ], 
+    "ClientToken": "3665885d-bc87-481b-3248-8da8c9fb8ce7_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:ec:c6:4d:6a:6a", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-665938b7", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-236.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.236"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-236.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-dd1432db", 
+          "AttachTime": "2018-03-11T23:39:43+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-svc-InstanceSecurityGroup-91UFSSJ5E89B", 
+            "GroupId": "sg-36b88644"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.236"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-02bec2f01a7c45c66", 
+          "AttachTime": "2018-03-11T23:39:44+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIOWGE4KKK7GUDHBDA", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-svc-InstanceProfile-M39RIZD4I9UY"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-svc-AutoScalingGroup-1KUKP6ER66IQI", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-svc/e3546a10-c189-11e7-95ed-500c524294f2", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-svc/e3546a10-c189-11e7-95ed-500c524294f2", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "Healthgrades.com services stack", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-svc", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-svc-0", 
+        "Key": "Name"
+      }
+    ], 
+    "AmiLaunchIndex": 1
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-05T23:00:04+00:00", 
+    "PrivateIpAddress": "10.224.36.58", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-02713c6f2eca1e961", 
+    "ImageId": "ami-50ede72b", 
+    "PrivateDnsName": "ip-10-224-36-58.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hg-test-east-green-NodeAppFleet-new-InstanceSecurityGroup-1RAXFWCWBHIR0", 
+        "GroupId": "sg-914839ee"
+      }
+    ], 
+    "ClientToken": "2ad587e1-92aa-c8a7-554b-991cce005183_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:8c:fb:6b:03:9c", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-8c80465d", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-58.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.58"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-58.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-7f701379", 
+          "AttachTime": "2018-03-05T23:00:04+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hg-test-east-green-NodeAppFleet-new-InstanceSecurityGroup-1RAXFWCWBHIR0", 
+            "GroupId": "sg-914839ee"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.58"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:cost:product"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0a3b7994b56bea74f", 
+          "AttachTime": "2018-03-05T23:00:05+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJ4CN2IZGYFEWJDQKI", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hg-test-east-green-NodeAppFleet-new-nodeAppInstanceProfile-101C5LTSOPJ0H"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hg.com", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Network"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Source"
+      }, 
+      {
+        "Value": "WebServerGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hg-test-east-green-NodeAppFleet-new", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hg-test-east-green-NodeAppFleet-new-WebServerGroup-8QD6NBFYAX5X", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "hg-test-east-green-NodeAppFleet-new", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hg-test-east-green-NodeAppFleet-new/e27affa0-1af9-11e7-8d0f-50a686e4bb4a", 
+        "Key": "aws:cloudformation:stack-id"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:43+00:00", 
+    "PrivateIpAddress": "10.224.36.239", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0354835dda451baf8", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-239.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-svc-InstanceSecurityGroup-91UFSSJ5E89B", 
+        "GroupId": "sg-36b88644"
+      }
+    ], 
+    "ClientToken": "3665885d-bc87-481b-3248-8da8c9fb8ce7_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:62:82:c7:43:1e", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-695938b8", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-239.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.239"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-239.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-3a16303c", 
+          "AttachTime": "2018-03-11T23:39:43+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-svc-InstanceSecurityGroup-91UFSSJ5E89B", 
+            "GroupId": "sg-36b88644"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.239"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-01f32b4a202bb95d1", 
+          "AttachTime": "2018-03-11T23:39:44+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIOWGE4KKK7GUDHBDA", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-svc-InstanceProfile-M39RIZD4I9UY"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "Healthgrades.com services stack", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-svc/e3546a10-c189-11e7-95ed-500c524294f2", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "hgw-svc", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "hgw-test-svc-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "hgw-test-svc-AutoScalingGroup-1KUKP6ER66IQI", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-svc/e3546a10-c189-11e7-95ed-500c524294f2", 
+        "Key": "aws:cloudformation:stack-id"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2017-09-07T07:02:08+00:00", 
+    "PrivateIpAddress": "10.224.236.8", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2017-10-10 19:08:22 GMT)", 
+    "InstanceId": "i-0d3eb7bf05f2779f6", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-8.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGDEVBIAPP01", 
+        "GroupId": "sg-e9e0cf96"
+      }
+    ], 
+    "ClientToken": "iJVtH1492587459355", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.small", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:99:36:a6:bc:6c", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-ccaff23b", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-8.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.8"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-8.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-8c47a9a3", 
+          "AttachTime": "2017-04-19T07:37:40+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGDEVBIAPP01", 
+            "GroupId": "sg-e9e0cf96"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.8"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0731b1369fa0a2bae", 
+          "AttachTime": "2017-06-27T07:33:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-03b3620ed6d41045e", 
+          "AttachTime": "2017-06-27T07:34:37+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "apaydin@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "Ahmet Apaydin", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "true", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "business intelligence:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "dramadoss@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "windows:sql:web", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "HGDEVBIAPP01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Application"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T12:10:49+00:00", 
+    "PrivateIpAddress": "10.224.36.15", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0acc819e47a720e3d", 
+    "EnaSupport": true, 
+    "ImageId": "ami-12ad3504", 
+    "PrivateDnsName": "ip-10-224-36-15.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hg-test-east-green-HG3-new-InstanceSecurityGroup-1NDR83AKEYRON", 
+        "GroupId": "sg-2e597352"
+      }
+    ], 
+    "ClientToken": "d4858891-ae02-5e65-6b2c-7f1581b17f73_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c4.xlarge", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:e8:5e:e9:ab:06", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-376633e6", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-15.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.15"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-15.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-1ae3d81c", 
+          "AttachTime": "2018-03-14T12:10:49+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hg-test-east-green-HG3-new-InstanceSecurityGroup-1NDR83AKEYRON", 
+            "GroupId": "sg-2e597352"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.15"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:cost:product"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-04a3c86793b8a0716", 
+          "AttachTime": "2018-03-14T12:10:49+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJACUIQRVTPBBPADRK", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hg-test-east-green-HG3-new-HG3InstanceProfile-1BP90RXDSSH39"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hg-test-east-green", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "True", 
+        "Key": "Schedule_justification"
+      }, 
+      {
+        "Value": "None", 
+        "Key": "Compliance"
+      }, 
+      {
+        "Value": "123456", 
+        "Key": "Cost_center"
+      }, 
+      {
+        "Value": "2,2,2", 
+        "Key": "ASG-ON-Min-Max-Desired"
+      }, 
+      {
+        "Value": "hg-test-east-green-HG3-new-WebServerGroup-1NQZ74742DCUD", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Network"
+      }, 
+      {
+        "Value": "HG", 
+        "Key": "Project_squad"
+      }, 
+      {
+        "Value": "1,1,1", 
+        "Key": "ASG-OFF-Min-Max-Desired"
+      }, 
+      {
+        "Value": "WebServerGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hg-test-east-green-HG3-new-hg3-testgreen-1", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hg-test-east-green-HG3-new/9d6e3790-f85a-11e6-8511-500c28709a35", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "HG3-new", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "arn:aws:sts::958306274796:assumed-role/ADFS-Dev-AdminsFull/jbowen@healthgrades.com", 
+        "Key": "AutoTag_Creator"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "MTuWThF:6am-7pm", 
+        "Key": "Running_schedule"
+      }, 
+      {
+        "Value": "hg-test-east-green-HG3-new", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "hg.com", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "jbowen@healthgrades.com", 
+        "Key": "Owner_email"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:43+00:00", 
+    "PrivateIpAddress": "10.224.36.168", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0e28bfda64f52860f", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-168.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+        "GroupId": "sg-19b7896b"
+      }
+    ], 
+    "ClientToken": "7745885d-bc91-ba39-961b-32d64fb53f82_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:7e:87:e6:9b:d8", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-dc54350d", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-168.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.168"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-168.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-36173130", 
+          "AttachTime": "2018-03-11T23:39:43+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-uisvc-InstanceSecurityGroup-1RS28FWMENYK1", 
+            "GroupId": "sg-19b7896b"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.168"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0587eb47fec92d97a", 
+          "AttachTime": "2018-03-11T23:39:44+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJ2AUCR32RTBN3KOMG", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-uisvc-InstanceProfile-1M13GJ1YN3J9D"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-uisvc/449d0c00-c18a-11e7-9ed7-500c28902e99", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hgw-test-uisvc-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hgw-test-svc", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hgw-test-uisvc-AutoScalingGroup-10EZ4HPOROISZ", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "healthgrades.com ui-services stack", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-uisvc", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "hgw-test-uisvc", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-uisvc/449d0c00-c18a-11e7-9ed7-500c28902e99", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-28T21:10:03+00:00", 
+    "PrivateIpAddress": "10.224.236.183", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-07f5fe60fb8f17948", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-183.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGTESTAPPDB01", 
+        "GroupId": "sg-4d5a7532"
+      }
+    ], 
+    "ClientToken": "TzQAH1492579685767", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.2xlarge", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:02:d0:19:d1:ba", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-317d2fc6", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-183.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.183"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-183.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-838866ac", 
+          "AttachTime": "2017-04-19T05:28:07+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGTESTAPPDB01", 
+            "GroupId": "sg-4d5a7532"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.183"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0fd4efe7b34722c2f", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0296bf8162a586577", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0cafcbd0a998e1922", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdd", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-09ce7b74b9104a1ff", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0d162dee52d7f708e", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0cf4211f6426279f1", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0ab0f77f1d17d69ba", 
+          "AttachTime": "2017-04-19T05:28:08+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "HGTESTAPPDB01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "ODS/SOLR", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "24by7", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "abhandary@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "abhandary@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "pbh:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "true", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "provider:internal admin", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "TEST", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "ODS", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "pbh", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "windows:sql:web", 
+        "Key": "hg:identity:software"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:16+00:00", 
+    "PrivateIpAddress": "10.224.36.201", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0eb969848e050779a", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-201.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-hg3-InstanceSecurityGroup-8EWOIZH771N7", 
+        "GroupId": "sg-477fef32"
+      }
+    ], 
+    "ClientToken": "3f85885d-bae0-3a54-ef60-8ca747114c66_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:7e:e1:25:55:d2", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-ea5b3a3b", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-201.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.201"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-201.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-a51630a3", 
+          "AttachTime": "2018-03-11T23:39:16+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-hg3-InstanceSecurityGroup-8EWOIZH771N7", 
+            "GroupId": "sg-477fef32"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.201"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-09c6e187022646fca", 
+          "AttachTime": "2018-03-11T23:39:17+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAISBPGETE642A5EEOM", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-hg3-InstanceProfile-2IBAU3LG3MHE"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-hg3", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hg3 web server", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "hgw-ci-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "hgw-hg3", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "hgw-test-hg3-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hgw-test-hg3-AutoScalingGroup-JHVK8QXN7267", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hg3/39bef9c0-d570-11e7-b043-500c219b8099", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hgw-test-hg3", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hg3/39bef9c0-d570-11e7-b043-500c219b8099", 
+        "Key": "hg:cost:stack"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2017-12-08T09:12:30+00:00", 
+    "PrivateIpAddress": "10.224.236.168", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-039df0ce09db80e6f", 
+    "EnaSupport": true, 
+    "ImageId": "ami-abf616bd", 
+    "PrivateDnsName": "ip-10-224-236-168.ec2.internal", 
+    "KeyName": "HGDEVBIAPP", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGDEVBIAPP", 
+        "GroupId": "sg-4f6fbc30"
+      }
+    ], 
+    "ClientToken": "YXySR1489675920078", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:cf:f5:98:b3:98", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-bfcfd94a", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-168.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.168"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-168.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-35ece418", 
+          "AttachTime": "2017-03-16T14:52:01+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGDEVBIAPP", 
+            "GroupId": "sg-4f6fbc30"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.168"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0b57d10d127d2506f", 
+          "AttachTime": "2017-03-16T14:52:02+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-03878e46564aac2f8", 
+          "AttachTime": "2017-03-16T14:52:02+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-09d78fb91f8292f8f", 
+          "AttachTime": "2017-03-16T14:52:02+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "mbabyalakshmi@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "BI/Report Server", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "windows:sql:web", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "true", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "HGDEVBIAPP", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "business intelligence:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": true, 
+    "LaunchTime": "2018-03-14T13:00:15+00:00", 
+    "PrivateIpAddress": "10.224.236.236", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:14 GMT)", 
+    "InstanceId": "i-0c28b86e7dea83ee1", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-236.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGTESTMDMDB01", 
+        "GroupId": "sg-17092668"
+      }
+    ], 
+    "ClientToken": "UUxeR1492583812102", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "r4.xlarge", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:0f:3b:5f:86:2e", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-9b075a6c", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-236.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.236"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-236.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-8627c9a9", 
+          "AttachTime": "2017-04-19T06:36:53+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGTESTMDMDB01", 
+            "GroupId": "sg-17092668"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.236"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0e475a7b5153ef5d0", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0f448aac4f99a68ce", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0480593cb6f7f45f9", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdd", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-03f2833ec9aefb9d5", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-04e1f7bca2206ec07", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-06baaa1ab315b8156", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0bc753e9a099f3f84", 
+          "AttachTime": "2017-04-19T06:36:54+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdh", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0fe00fcf5842d6a2e", 
+          "AttachTime": "2017-05-08T19:44:08+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdi", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-048d394f40505ca63", 
+          "AttachTime": "2017-07-12T17:26:18+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdj", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-029b9f063a1d7bee4", 
+          "AttachTime": "2017-08-03T19:22:28+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "jtran@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "MDM", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "provider:internal admin", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "MDM", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "HGTESTMDMDB01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "John Tran", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "TEST", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "false", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "mbabyalakshmi@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "hgmd", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "hgmd:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-22T14:41:08+00:00", 
+    "PrivateIpAddress": "10.224.236.19", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0e07a69644b3f6183", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3186464b", 
+    "PrivateDnsName": "ip-10-224-236-19.ec2.internal", 
+    "KeyName": "IIS-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGTESTBIPROC01", 
+        "GroupId": "sg-67a6be14"
+      }
+    ], 
+    "ClientToken": "XxBHg1507363093837", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:1a:95:dd:18:a8", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-f8c90272", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-19.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.19"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-19.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-7f294888", 
+          "AttachTime": "2017-10-07T07:58:15+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGTESTBIPROC01", 
+            "GroupId": "sg-67a6be14"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.19"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0fa64479a9d5ea602", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0d14bd8defbd72edd", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0a84cdf14f11420f1", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-03867e165b48f0afb", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0b9d382900020e26a", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdd", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-003e40e58bf77c392", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-05bb2488a4657b679", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdh", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-04140187424506f72", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdi", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0ed12e8caad031fde", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdj", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0ce8aedb02c358c8f", 
+          "AttachTime": "2017-10-07T07:58:17+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "HGTESTBIPROC01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "Abhash", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "true", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "business intelligence:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T13:00:12+00:00", 
+    "PrivateIpAddress": "10.224.236.120", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:13 GMT)", 
+    "InstanceId": "i-08fdf5dabe148bf24", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-120.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGDEVASPROC01", 
+        "GroupId": "sg-1b1f3064"
+      }
+    ], 
+    "ClientToken": "fdZub1492584761121", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:86:44:bf:a8:96", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-cb237e3c", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-120.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.120"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-120.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-210fe10e", 
+          "AttachTime": "2017-04-19T06:52:42+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGDEVASPROC01", 
+            "GroupId": "sg-1b1f3064"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.120"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-07e0beabefbcb569b", 
+          "AttachTime": "2017-04-19T06:52:43+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-09a215e7372345597", 
+          "AttachTime": "2017-04-19T06:52:43+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-00271e6bcc6ed61a7", 
+          "AttachTime": "2017-04-19T06:52:43+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "mbabyalakshmi@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "Dave Fritsch", 
+        "Key": "POC"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "false", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "HGDEVASPROC01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hgmd:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "ec2-34-193-212-63.compute-1.amazonaws.com", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-14T21:23:50+00:00", 
+    "PublicIpAddress": "34.193.212.63", 
+    "PrivateIpAddress": "10.224.236.49", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0b0e149d8de793410", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-49.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGTESTPORTALDB01", 
+        "GroupId": "sg-0b142174"
+      }
+    ], 
+    "ClientToken": "Jdiun1492696943271", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:e8:4f:50:c4:52", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-e5486112", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-49.ec2.internal", 
+            "PrivateIpAddress": "10.224.236.49", 
+            "Primary": true, 
+            "Association": {
+              "PublicIp": "34.193.212.63", 
+              "PublicDnsName": "ec2-34-193-212-63.compute-1.amazonaws.com", 
+              "IpOwnerId": "958306274796"
+            }
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-49.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-921ae8bd", 
+          "AttachTime": "2017-04-20T14:02:24+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGTESTPORTALDB01", 
+            "GroupId": "sg-0b142174"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "PrivateIpAddress": "10.224.236.49", 
+        "SubnetId": "subnet-529c177f", 
+        "Association": {
+          "PublicIp": "34.193.212.63", 
+          "PublicDnsName": "ec2-34-193-212-63.compute-1.amazonaws.com", 
+          "IpOwnerId": "958306274796"
+        }
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0e56133af834beec4", 
+          "AttachTime": "2017-04-20T14:02:26+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-05922968bd07b127b", 
+          "AttachTime": "2017-04-20T14:02:26+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0e7ca296f8edd9a7e", 
+          "AttachTime": "2017-04-20T14:02:26+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdd", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-0e1a57421633cfc0d", 
+          "AttachTime": "2017-04-20T14:02:26+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-07aa9646803772bbb", 
+          "AttachTime": "2017-04-20T14:02:26+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-06c5e5051c88f99b8", 
+          "AttachTime": "2017-04-27T00:26:49+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "kgannon@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "MMP", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "true", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "provider:internal admin", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "MMP/Admin", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "mbabyalakshmi@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "TEST", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "kgannon@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "HGTESTPORTALDB1", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "hgmd:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "hgmd", 
+        "Key": "hg:cost:stack"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T13:00:14+00:00", 
+    "PrivateIpAddress": "10.224.236.107", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:14 GMT)", 
+    "InstanceId": "i-03cb46f61b5bdacf9", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-107.ec2.internal", 
+    "KeyName": "SQL-dev-1", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGDEVMDMDB01", 
+        "GroupId": "sg-a56554da"
+      }
+    ], 
+    "ClientToken": "YQyzG1494579433635", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:b5:5b:69:e2:68", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-5413f39d", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-107.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.107"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-107.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-ca7258e5", 
+          "AttachTime": "2017-05-12T08:57:15+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGDEVMDMDB01", 
+            "GroupId": "sg-a56554da"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.107"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-00a7b7b32467a9d41", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06b3b73e5d9bac540", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-015481a8ee030c7a9", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvde", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0c1e24b271dd338c7", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0f0b8f4e96a4bce03", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdh", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0ca3866b8b6e96fe8", 
+          "AttachTime": "2017-05-12T08:57:16+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-061d29c980f9b4ea8", 
+          "AttachTime": "2018-02-14T19:30:34+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdi", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-01a04ad67b7b6bd64", 
+          "AttachTime": "2018-02-15T17:34:48+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgmd:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "No", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "hgmd", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "John Tran", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "MDM", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "provider:internal admin", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "jtran@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "HGDEVMDMDB01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "dramadoss@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "MDM", 
+        "Key": "Application"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-11T23:39:16+00:00", 
+    "PrivateIpAddress": "10.224.36.128", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-0511af53df9d638d9", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-128.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-hg3-InstanceSecurityGroup-8EWOIZH771N7", 
+        "GroupId": "sg-477fef32"
+      }
+    ], 
+    "ClientToken": "3f85885d-bae0-3a54-ef60-8ca747114c66_subnet-3507856e_2", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "c5.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:0e:a2:32:10:cc", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-eb5b3a3a", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-128.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.128"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-128.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-a41630a2", 
+          "AttachTime": "2018-03-11T23:39:16+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-hg3-InstanceSecurityGroup-8EWOIZH771N7", 
+            "GroupId": "sg-477fef32"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.128"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-061ff441dd7d9e8f7", 
+          "AttachTime": "2018-03-11T23:39:17+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAISBPGETE642A5EEOM", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-hg3-InstanceProfile-2IBAU3LG3MHE"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-hg3", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hg3/39bef9c0-d570-11e7-b043-500c219b8099", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "hgw-ci-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "hg3 web server", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "hgw-test-hg3", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "hgw-test-hg3-AutoScalingGroup-JHVK8QXN7267", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "hgw-hg3", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "hgw-test-hg3-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hg3/39bef9c0-d570-11e7-b043-500c219b8099", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }
+    ], 
+    "AmiLaunchIndex": 1
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T13:00:12+00:00", 
+    "PrivateIpAddress": "10.224.236.69", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:13 GMT)", 
+    "InstanceId": "i-08b38c5136a1fe832", 
+    "EnaSupport": true, 
+    "ImageId": "ami-77442161", 
+    "PrivateDnsName": "ip-10-224-236-69.ec2.internal", 
+    "KeyName": "s-dn-pd-eapp-02", 
+    "SecurityGroups": [
+      {
+        "GroupName": "s-dn-pd-eapp-02-sg", 
+        "GroupId": "sg-1cdb2763"
+      }
+    ], 
+    "ClientToken": "Hywrd1493238360483", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:9d:0b:96:7d:6a", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-c4fe3f32", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-69.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.69"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-69.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-f88f26d7", 
+          "AttachTime": "2017-04-26T20:26:01+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "s-dn-pd-eapp-02-sg", 
+            "GroupId": "sg-1cdb2763"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.69"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-02075764aa8000b30", 
+          "AttachTime": "2017-04-26T20:26:02+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdf", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-016f66ea796bd6acd", 
+          "AttachTime": "2017-04-26T20:26:02+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdg", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0c25e4ead66c1f356", 
+          "AttachTime": "2017-04-26T20:26:02+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "dramadoss@healthgrades.com", 
+        "Key": "Launched_by"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "false", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri;1300;mon,tue,wed,thu,fri,sat;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "kdyck@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "provider:quality rating", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "windows:sql:web", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "Ratings", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "Quality Ratings", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "kdyck@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "quality", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "HGDEVQRAPP01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "quality:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-14T13:00:14+00:00", 
+    "PrivateIpAddress": "10.224.236.51", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-03-15 01:00:13 GMT)", 
+    "InstanceId": "i-05b7de45fb7a80a03", 
+    "EnaSupport": true, 
+    "ImageId": "ami-3a0e842c", 
+    "PrivateDnsName": "ip-10-224-236-51.ec2.internal", 
+    "KeyName": "SQL-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "HGDEVASQUERY01", 
+        "GroupId": "sg-ce6f5ab1"
+      }
+    ], 
+    "ClientToken": "xktLl1492692324466", 
+    "SubnetId": "subnet-529c177f", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "12:dc:fc:80:2a:e8", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-21517fd6", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-236-51.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.236.51"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-236-51.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-64a6544b", 
+          "AttachTime": "2017-04-20T12:45:26+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "HGDEVASQUERY01", 
+            "GroupId": "sg-ce6f5ab1"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-529c177f", 
+        "PrivateIpAddress": "10.224.236.51"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-014c41a186adf37fd", 
+          "AttachTime": "2017-04-20T12:45:27+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdb", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0ee1ccd0d5b7455c2", 
+          "AttachTime": "2017-04-20T12:45:27+00:00"
+        }
+      }, 
+      {
+        "DeviceName": "xvdc", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-010c4bae43de71f10", 
+          "AttachTime": "2017-04-20T12:45:27+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "0500;30;utc;sat", 
+        "Key": "Snapshot Scheduler"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "mon,tue,wed,thu,fri,sat,sun;1300;mon,tue,wed,thu,fri,sat,sun;0100;", 
+        "Key": "Running Schedule"
+      }, 
+      {
+        "Value": "250", 
+        "Key": "Cost Center"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1d", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner Email"
+      }, 
+      {
+        "Value": "business intelligence:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and bi", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "dfrisch@healthgrades.com", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "false", 
+        "Key": "Opt Out"
+      }, 
+      {
+        "Value": "BI", 
+        "Key": "Project Squad"
+      }, 
+      {
+        "Value": "DEV", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "", 
+        "Key": "Volume Del On Term"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "mw_win_tue_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "HGDEVASQUERY01", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "Data Center Migration", 
+        "Key": "Purpose"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-03-09T12:30:17+00:00", 
+    "PrivateIpAddress": "10.224.36.169", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-09ef3c46f1d2aa42d", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-169.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-hgmd-InstanceSecurityGroup-1MU2JYJ54FS4G", 
+        "GroupId": "sg-5396bc24"
+      }
+    ], 
+    "ClientToken": "5145882a-f5e0-409a-9af8-8ae64ae24c9d_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:b8:85:52:00:d2", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-928a0f43", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-169.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.169"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-169.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-dba9e1dd", 
+          "AttachTime": "2018-03-09T12:30:17+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-hgmd-InstanceSecurityGroup-1MU2JYJ54FS4G", 
+            "GroupId": "sg-5396bc24"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.169"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06ba5abd3d0a7b730", 
+          "AttachTime": "2018-03-09T12:30:18+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIXEV7JY6QTQWRUWIM", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-hgmd-InstanceProfile-W5OVVBDJYK67"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "windows2016 iis snowflake", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hgmd/89a1c6d0-1647-11e8-a3ca-500c286014fd", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "hgw-test-hgmd", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "hgw-test-hgmd-AutoScalingGroup-18F6D0PRN35WJ", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "hgw-test-hgmd", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "web server for hgmd team", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "hgw-test-hgmd-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hgw-hgmd", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-hgmd/89a1c6d0-1647-11e8-a3ca-500c286014fd", 
+        "Key": "hg:cost:stack"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "ec2-54-211-86-27.compute-1.amazonaws.com", 
+    "RootDeviceType": "ebs", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-02-02T18:12:18+00:00", 
+    "PublicIpAddress": "54.211.86.27", 
+    "PrivateIpAddress": "10.203.169.199", 
+    "ProductCodes": [], 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-01c4b68c0e1e277a0", 
+    "ImageId": "ami-914c4ceb", 
+    "PrivateDnsName": "ip-10-203-169-199.ec2.internal", 
+    "KeyName": "brightspot-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "widgets", 
+        "GroupId": "sg-e925f481"
+      }
+    ], 
+    "ClientToken": "", 
+    "InstanceType": "m3.medium", 
+    "NetworkInterfaces": [], 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1d"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": false, 
+          "VolumeId": "vol-007c2efd5bfcfceb9", 
+          "AttachTime": "2018-02-02T18:12:18+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "KernelId": "aki-825ea7eb", 
+    "IamInstanceProfile": {
+      "Id": "AIPAI7WPKDXW3ZOARJSLC", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/SSMPatchingAccess"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "paravirtual", 
+    "Tags": [
+      {
+        "Value": "Travis_Bright", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "PSD", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "No Stack", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "Runs widgets for external sites.", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "widgets", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "staging-apps.healthgrades.com (widgets) - v2", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hg-testaws-east-green", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "php apache", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "tbright@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-01-30T07:00:42+00:00", 
+    "PrivateIpAddress": "10.224.36.202", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-05a9aece708c8f7df", 
+    "EnaSupport": true, 
+    "ImageId": "ami-c4ca53be", 
+    "PrivateDnsName": "ip-10-224-36-202.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hgw-test-api-InstanceSecurityGroup-3V34S8I5MGZ7", 
+        "GroupId": "sg-371cc342"
+      }
+    ], 
+    "ClientToken": "2ce58517-788b-c20f-481b-23c850dd0e6a_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:2e:62:ef:cc:1e", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-1c020ac0", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-202.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.202"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-202.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-2b8e1cf4", 
+          "AttachTime": "2018-01-30T07:00:42+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hgw-test-api-InstanceSecurityGroup-3V34S8I5MGZ7", 
+            "GroupId": "sg-371cc342"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.202"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-0fbc22295e4810f1a", 
+          "AttachTime": "2018-01-30T07:00:43+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJJTQVAF3NIIIHKVTE", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hgw-test-api-InstanceProfile-G822GS5A1HK2"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "hgw-test-api", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "public api v3 and v2 mostly for native team", 
+        "Key": "hg:identity:purpose"
+      }, 
+      {
+        "Value": "hgw-test-api-AutoScalingGroup-CFB8BWVHWWM5", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "AutoScalingGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hgw-api", 
+        "Key": "hg:octopus:roles"
+      }, 
+      {
+        "Value": "Web", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "squad_automatons@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "squad_automatons", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hgw-test-api-0", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "erick_stubbs", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "hgw-test-api", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-api/6d19ee90-ce24-11e7-8df5-50d5cd274ad2", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "Development", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "windows2016 iis", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hgw-test-api/6d19ee90-ce24-11e7-8df5-50d5cd274ad2", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "hgw-test-us-east-1", 
+        "Key": "hg:octopus:environment"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "disabled"
+    }, 
+    "PublicDnsName": "ec2-34-238-8-142.compute-1.amazonaws.com", 
+    "StateReason": {
+      "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+      "Code": "Client.UserInitiatedShutdown"
+    }, 
+    "State": {
+      "Code": 80, 
+      "Name": "stopped"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2018-01-09T08:14:41+00:00", 
+    "PublicIpAddress": "34.238.8.142", 
+    "PrivateIpAddress": "10.224.192.157", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-c6ac67a0", 
+    "StateTransitionReason": "User initiated (2018-01-09 16:19:38 GMT)", 
+    "InstanceId": "i-088da86be6c446689", 
+    "EnaSupport": true, 
+    "ImageId": "ami-da05a4a0", 
+    "PrivateDnsName": "ip-10-224-192-157.ec2.internal", 
+    "KeyName": "IIS-dev", 
+    "SecurityGroups": [
+      {
+        "GroupName": "Docker-TEST", 
+        "GroupId": "sg-b1a6bfc3"
+      }
+    ], 
+    "ClientToken": "jrZoV1510313643679", 
+    "SubnetId": "subnet-3d7c0674", 
+    "InstanceType": "t2.medium", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0a:a0:7e:04:59:52", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-c6ac67a0", 
+        "Description": "Primary network interface", 
+        "NetworkInterfaceId": "eni-5b5e67eb", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-192-157.ec2.internal", 
+            "PrivateIpAddress": "10.224.192.157", 
+            "Primary": true, 
+            "Association": {
+              "PublicIp": "34.238.8.142", 
+              "PublicDnsName": "ec2-34-238-8-142.compute-1.amazonaws.com", 
+              "IpOwnerId": "958306274796"
+            }
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-192-157.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-b57b1472", 
+          "AttachTime": "2017-11-10T11:34:04+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "Docker-TEST", 
+            "GroupId": "sg-b1a6bfc3"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "PrivateIpAddress": "10.224.192.157", 
+        "SubnetId": "subnet-3d7c0674", 
+        "Association": {
+          "PublicIp": "34.238.8.142", 
+          "PublicDnsName": "ec2-34-238-8-142.compute-1.amazonaws.com", 
+          "IpOwnerId": "958306274796"
+        }
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1a"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:contact:poc", 
+      "tag:hg:contact:poc_email", 
+      "tag:hg:contact:team", 
+      "tag:hg:cost:application", 
+      "tag:hg:cost:business_role", 
+      "tag:hg:cost:cost_center", 
+      "tag:hg:cost:product", 
+      "tag:hg:cost:stack", 
+      "tag:hg:identity:environment", 
+      "tag:hg:identity:purpose", 
+      "tag:hg:identity:software"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-00cfa01c3ea65d211", 
+          "AttachTime": "2017-11-10T11:34:05+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAIA72KECJNKZIF6FJS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/ssm-Hybrid"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "database", 
+        "Key": "hg:cost:cost_center"
+      }, 
+      {
+        "Value": "burst:ssrs:power bi", 
+        "Key": "hg:cost:application"
+      }, 
+      {
+        "Value": "hgmd:data science:legacy data platform", 
+        "Key": "hg:cost:product"
+      }, 
+      {
+        "Value": "Docker-test", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "hoang_hoang", 
+        "Key": "hg:contact:poc"
+      }, 
+      {
+        "Value": "Murali A B", 
+        "Key": "Owner"
+      }, 
+      {
+        "Value": "hg-dev-us-east-1a", 
+        "Key": "hg:identity:environment"
+      }, 
+      {
+        "Value": "business intelligence", 
+        "Key": "hg:cost:stack"
+      }, 
+      {
+        "Value": "foobar", 
+        "Key": "CostCenter"
+      }, 
+      {
+        "Value": "Test", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "database", 
+        "Key": "hg:contact:team"
+      }, 
+      {
+        "Value": "hhoang@healthgrades.com", 
+        "Key": "hg:contact:poc_email"
+      }, 
+      {
+        "Value": "windows:sql", 
+        "Key": "hg:identity:software"
+      }, 
+      {
+        "Value": "", 
+        "Key": "hg:cost:business_role"
+      }, 
+      {
+        "Value": "these machine supports sql mdm, quality rating and b i", 
+        "Key": "hg:identity:purpose"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }, 
+  {
+    "Monitoring": {
+      "State": "enabled"
+    }, 
+    "PublicDnsName": "", 
+    "Platform": "windows", 
+    "State": {
+      "Code": 16, 
+      "Name": "running"
+    }, 
+    "EbsOptimized": false, 
+    "LaunchTime": "2017-09-25T19:57:52+00:00", 
+    "PrivateIpAddress": "10.224.36.229", 
+    "ProductCodes": [], 
+    "VpcId": "vpc-e720e981", 
+    "StateTransitionReason": "", 
+    "InstanceId": "i-01eb3f0958eae8880", 
+    "EnaSupport": true, 
+    "ImageId": "ami-12ad3504", 
+    "PrivateDnsName": "ip-10-224-36-229.ec2.internal", 
+    "KeyName": "HG-key", 
+    "SecurityGroups": [
+      {
+        "GroupName": "hg-test-east-green-HangfireFleet-new-InstanceSecurityGroup-1UAB9D0HP0Y28", 
+        "GroupId": "sg-ae8d5fd1"
+      }
+    ], 
+    "ClientToken": "b65cd602-b030-4344-a7e5-d9265ab9fc38_subnet-3507856e_1", 
+    "SubnetId": "subnet-3507856e", 
+    "InstanceType": "m4.large", 
+    "NetworkInterfaces": [
+      {
+        "Status": "in-use", 
+        "MacAddress": "0e:ed:eb:13:cb:da", 
+        "SourceDestCheck": true, 
+        "VpcId": "vpc-e720e981", 
+        "Description": "", 
+        "NetworkInterfaceId": "eni-c84a567d", 
+        "PrivateIpAddresses": [
+          {
+            "PrivateDnsName": "ip-10-224-36-229.ec2.internal", 
+            "Primary": true, 
+            "PrivateIpAddress": "10.224.36.229"
+          }
+        ], 
+        "PrivateDnsName": "ip-10-224-36-229.ec2.internal", 
+        "Attachment": {
+          "Status": "attached", 
+          "DeviceIndex": 0, 
+          "DeleteOnTermination": true, 
+          "AttachmentId": "eni-attach-601924a0", 
+          "AttachTime": "2017-09-25T19:57:52+00:00"
+        }, 
+        "Groups": [
+          {
+            "GroupName": "hg-test-east-green-HangfireFleet-new-InstanceSecurityGroup-1UAB9D0HP0Y28", 
+            "GroupId": "sg-ae8d5fd1"
+          }
+        ], 
+        "Ipv6Addresses": [], 
+        "OwnerId": "958306274796", 
+        "SubnetId": "subnet-3507856e", 
+        "PrivateIpAddress": "10.224.36.229"
+      }
+    ], 
+    "SourceDestCheck": true, 
+    "Placement": {
+      "Tenancy": "default", 
+      "GroupName": "", 
+      "AvailabilityZone": "us-east-1b"
+    }, 
+    "Hypervisor": "xen", 
+    "c7n:MatchedFilters": [
+      "tag:hg:cost:product"
+    ], 
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1", 
+        "Ebs": {
+          "Status": "attached", 
+          "DeleteOnTermination": true, 
+          "VolumeId": "vol-06ba0a8d07af4b509", 
+          "AttachTime": "2017-09-25T19:57:52+00:00"
+        }
+      }
+    ], 
+    "Architecture": "x86_64", 
+    "RootDeviceType": "ebs", 
+    "IamInstanceProfile": {
+      "Id": "AIPAJGVXTUKSK5CILPCSS", 
+      "Arn": "arn:aws:iam::958306274796:instance-profile/hg-test-east-green-HangfireFleet-new-HangfireInstanceProfile-1GPH68PUH1TL3"
+    }, 
+    "RootDeviceName": "/dev/sda1", 
+    "VirtualizationType": "hvm", 
+    "Tags": [
+      {
+        "Value": "123456", 
+        "Key": "Cost_center"
+      }, 
+      {
+        "Value": "arn:aws:cloudformation:us-east-1:958306274796:stack/hg-test-east-green-HangfireFleet-new/fd98df20-0a5d-11e7-a7e4-50d5cafe76fe", 
+        "Key": "aws:cloudformation:stack-id"
+      }, 
+      {
+        "Value": "none", 
+        "Key": "Compliance"
+      }, 
+      {
+        "Value": "HG", 
+        "Key": "Project_squad"
+      }, 
+      {
+        "Value": "always-on", 
+        "Key": "Running_schedule"
+      }, 
+      {
+        "Value": "hg-test-east-green-HangfireFleet-new-WebServerGroup-S7334MTIOFFH", 
+        "Key": "aws:autoscaling:groupName"
+      }, 
+      {
+        "Value": "testeastgreen", 
+        "Key": "Environment"
+      }, 
+      {
+        "Value": "Private", 
+        "Key": "Network"
+      }, 
+      {
+        "Value": "mw_win_thu_12amto5am", 
+        "Key": "Patch Group"
+      }, 
+      {
+        "Value": "hg-test-east-green-HangfireFleet-new-hangfire-testgreen-1", 
+        "Key": "Name"
+      }, 
+      {
+        "Value": "jbowen@healthgrades.com", 
+        "Key": "Owner_email"
+      }, 
+      {
+        "Value": "WebServerGroup", 
+        "Key": "aws:cloudformation:logical-id"
+      }, 
+      {
+        "Value": "hg-test-east-green-HangfireFleet-new", 
+        "Key": "aws:cloudformation:stack-name"
+      }, 
+      {
+        "Value": "HangfireFleet", 
+        "Key": "Application"
+      }, 
+      {
+        "Value": "True", 
+        "Key": "Schedule_justification"
+      }, 
+      {
+        "Value": "hg.com", 
+        "Key": "hg:cost:product"
+      }
+    ], 
+    "AmiLaunchIndex": 0
+  }
+]

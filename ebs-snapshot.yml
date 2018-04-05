@@ -1,0 +1,10 @@
+policies:
+  - name: ebs-daily-snapshot
+    resource: ec2
+    description: |
+      Take snapshot of ebs volumes
+      with the tag present
+    filters:
+      - "tag:ebs_snapshot": present
+    actions:
+      - type: snapshot 

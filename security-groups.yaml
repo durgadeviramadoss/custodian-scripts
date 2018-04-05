@@ -1,0 +1,6 @@
+policies:
+  - name: odd-groups
+    resource: security-group
+    filters:
+      - type: ingress
+        OnlyPorts: [80, 443, 22]

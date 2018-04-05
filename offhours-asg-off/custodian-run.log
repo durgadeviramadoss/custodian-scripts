@@ -1,0 +1,5 @@
+2018-03-15 10:01:20,231 - custodian.policy - INFO - policy: offhours-asg-off resource:asg region:us-east-2 count:0 time:0.11
+2018-03-15 10:01:26,262 - custodian.policy - INFO - policy: offhours-asg-off resource:asg region:us-east-2 count:0 time:0.00
+2018-03-15 10:01:33,563 - custodian.policy - INFO - policy: offhours-asg-off resource:asg region:us-east-2 count:0 time:0.00
+2018-03-15 10:07:19,086 - custodian.policy - INFO - policy: offhours-asg-off resource:asg region:us-east-2 count:0 time:0.00
+2018-03-15 10:08:57,413 - custodian.policy - INFO - policy: offhours-asg-off resource:asg region:us-east-2 count:0 time:0.00

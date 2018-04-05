@@ -1,0 +1,5 @@
+policies:
+ - name: public-elb-exposed-instance-roles
+   resource: ec2
+   filters:
+    - PublicDnsName: not-null

@@ -1,0 +1,6 @@
+2018-03-27 09:41:53,314 - custodian.filters - INFO - InstanceOffHour 0 of 1 instances
+2018-03-27 09:41:53,314 - custodian.policy - INFO - policy: off-hour resource:ec2 region:us-east-2 count:0 time:0.00
+2018-03-27 09:42:55,001 - custodian.filters - INFO - InstanceOffHour 0 of 1 instances
+2018-03-27 09:42:55,002 - custodian.policy - INFO - policy: off-hour resource:ec2 region:us-east-2 count:0 time:0.00
+2018-03-27 09:43:26,956 - custodian.filters - INFO - InstanceOffHour 0 of 1 instances
+2018-03-27 09:43:26,957 - custodian.policy - INFO - policy: off-hour resource:ec2 region:us-east-2 count:0 time:0.00

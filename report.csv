@@ -1,0 +1,4 @@
+CustodianDate,InstanceId,tag:Name,InstanceType,LaunchTime,VpcId,PrivateIpAddress
+2018-03-27 09:19:20.028770,i-0cdb3d917f51eeb8b,hgw-nuget,t2.medium,2018-03-13T17:04:04+00:00,vpc-e720e981,10.224.36.7
+2018-03-27 09:19:20.028770,i-03479b4ea2d5e2ed4,hgnetbuildaws,t2.medium,2018-01-03T16:56:39+00:00,vpc-e720e981,10.224.36.166
+2018-03-27 09:19:20.028770,i-0be3b12bb7fdd1168,jenkins-sre-linux-master,m4.large,2017-09-06T17:12:21+00:00,vpc-c6ac67a0,10.224.228.215

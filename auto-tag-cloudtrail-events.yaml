@@ -1,0 +1,23 @@
+policies:
+  - name: ec2-auto-tag-ownercontact
+    resource: ec2
+    mode:
+      type: cloudtrail
+      role: arn:aws:iam::958306274796:role/EC2_lambda_cloud_trail_event
+      events:
+        - RunInstances
+    filters:
+    - or:
+      - "tag:OwnerContact": empty
+      - "tag:Name": empty
+      - "tag:Role": empty
+      - "tag:Contact": empty
+      - "tag:Project": empty
+      - "tag:Team": empty
+    actions:
+      - type: tag
+        key: Notice
+        value: Missing-Required-Tag
+      - type: auto-tag-user
+        update: true
+        tag: OwnerContact
